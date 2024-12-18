@@ -79,3 +79,37 @@
 | `!bet`            | Belirli bir seçeneğe belirli miktarda puan ile bahis oynar.       | `!bet yes 1000`               | Herkes        |
 | `!bet create`     | Moderatörlerin tahminler oluşturmasını sağlar.                    | `!bet create`                 | Moderatörler  |
 | `!bet result`     | Moderatörlerin kazanan seçeneği seçmesini sağlar.                 | `!bet result yes`             | Moderatörler  |
+
+                                                # Twitch Komutları
+
+
+| **Komut**               | **Açıklama**                                                                                   | **Yetki Düzeyi (Permissions)**   |
+|--------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------|
+| **/ban [kullanıcı]**     | Belirtilen kullanıcıyı kanaldan banlar.                                                       | Moderatör veya Yayıncı            |
+| **/unban [kullanıcı]**   | Banlanan kullanıcının banını kaldırır.                                                        | Moderatör veya Yayıncı            |
+| **/timeout [kullanıcı] [süre]** | Kullanıcıyı belirli bir süreliğine susturur. Varsayılan süre 600 saniyedir.                      | Moderatör veya Yayıncı            |
+| **/untimeout [kullanıcı]** | Timeout verilen kullanıcıyı susturma durumundan çıkarır.                                     | Moderatör veya Yayıncı            |
+| **/clear**               | Sohbet geçmişini temizler.                                                                    | Moderatör veya Yayıncı            |
+| **/slow [süre]**         | Slow mode'u etkinleştirir. Kullanıcıların mesaj yazma aralığını belirler.                      | Moderatör veya Yayıncı            |
+| **/slowoff**             | Slow mode'u devre dışı bırakır.                                                               | Moderatör veya Yayıncı            |
+| **/followers [süre]**    | Takipçi modunu etkinleştirir. Sadece belirli süredir takip edenler sohbete katılabilir.        | Moderatör veya Yayıncı            |
+| **/followersoff**        | Takipçi modunu devre dışı bırakır.                                                            | Moderatör veya Yayıncı            |
+| **/subscribers**         | Sadece abonelerin yazabileceği abone modunu etkinleştirir.                                    | Moderatör veya Yayıncı            |
+| **/subscribersoff**      | Abone modunu devre dışı bırakır.                                                              | Moderatör veya Yayıncı            |
+| **/emoteonly**           | Sadece emojilerin kullanılabileceği emote-only modunu etkinleştirir.                          | Moderatör veya Yayıncı            |
+| **/emoteonlyoff**        | Emote-only modunu devre dışı bırakır.                                                         | Moderatör veya Yayıncı            |
+| **/mod [kullanıcı]**     | Belirtilen kullanıcıya moderatör yetkisi verir.                                              | Yayıncı                           |
+| **/unmod [kullanıcı]**   | Belirtilen kullanıcının moderatör yetkisini kaldırır.                                         | Yayıncı                           |
+| **/vip [kullanıcı]**     | Belirtilen kullanıcıya VIP rozeti verir.                                                     | Yayıncı                           |
+| **/unvip [kullanıcı]**   | Belirtilen kullanıcının VIP rozetini kaldırır.                                               | Yayıncı                           |
+| **/raid [kanaladı]**     | Başka bir kanala raid (baskın) başlatır.                                                     | Yayıncı                           |
+| **/unraid**              | Başlatılan raid işlemini iptal eder.                                                         | Yayıncı                           |
+| **/host [kanaladı]**     | Belirtilen kanalı kendi kanalında host eder.                                                 | Yayıncı                           |
+| **/unhost**              | Host modunu devre dışı bırakır.                                                              | Yayıncı                           |
+
+### Notlar:
+- **Moderatörler**: Yayıncı tarafından verilen yetkilere sahiptir. Ancak bazı komutlar (örneğin, /mod ve /vip gibi) yalnızca yayıncılar tarafından kullanılabilir.
+- **Yayıncılar**: Kanalın tam kontrolüne sahiptir ve tüm komutları kullanabilir.
+- **Permission Seviyeleri**: Komutlar için gerekli yetki düzeyleri genellikle yayıncı ve moderatör olarak ikiye ayrılır. VIP'ler bu komutları kullanamaz.
+
+
