@@ -82,7 +82,6 @@
 
                                                 # Twitch Komutları
 
-
 | **Komut**               | **Açıklama**                                                                                   | **Yetki Düzeyi (Permissions)**   |
 |--------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------|
 | **/ban [kullanıcı]**     | Belirtilen kullanıcıyı kanaldan banlar.                                                       | Moderatör veya Yayıncı            |
