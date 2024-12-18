@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: AercyCommands
+name: Commands
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -45,6 +45,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Made by Oyuncaz
         id: deployment
         uses: actions/deploy-pages@v4
